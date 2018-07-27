@@ -5,7 +5,8 @@
         <title></title>
     </head>
     <body>
-        Wellcome to this small PHP skill test.
+        <b>Wellcome to this small PHP skill test.</b>
+        
         <?php
         
         ?>
