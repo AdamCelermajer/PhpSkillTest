@@ -1,0 +1,1 @@
+<?php include_once __DIR__.'/../encoders.php'; class encoder_WPP extends Encoders {}
