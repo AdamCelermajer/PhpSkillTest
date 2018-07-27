@@ -1,17 +1,11 @@
-<html>
-  
-  <head>
+<html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
-    rel="stylesheet" type="text/css">
-    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
-    rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
     <div class="cover">
       <div class="navbar navbar-default">
         <div class="container">
@@ -50,17 +44,30 @@
       </div>
     </div>
     <div class="modal fade" id="starttest">
-      <div class="modal-dialog modal-sm">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             <h4 class="modal-title">Let Start the Test</h4>
           </div>
-          <div class="modal-body">
-            <p>Type your text and select a encrypt method ... The server will return
+          <div class="modal-body ">
+              <h2><p>Type your text to encrypt it ... The server will return
               you the encrypted result.
               <br>---- but we have a error ----&nbsp;
               <br>your mission is to fix it ... Nicely</p>
+            </h2><hr>
+            <div class="form-group">
+                <label class="control-label" for="exampleInputEmail1">Text to encode</label>
+                <input class="form-control" id="txtsrc" placeholder="Enter your text" type="text">
+              </div>
+              
+              <span onclick="$.post('encoder.php',{txt:txtsrc.value},function(data) {txtrst.innerHTML=data})" class="btn btn-block btn-primary btn-sm">Submit</span>
+              <hr>
+              <div class="form-group">
+                <label class="control-label">Text Encoded</label>
+                <textarea class="form-control" id="txtrst"></textarea>
+              </div>
+            
           </div>
           <div class="modal-footer">
             <a class="btn btn-default" data-dismiss="modal">Close</a>
@@ -68,6 +75,6 @@
         </div>
       </div>
     </div>
-  </body>
+  
 
-</html>
+</body></html>
