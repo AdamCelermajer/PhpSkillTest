@@ -5,7 +5,7 @@ spl_autoload_register(function ($class_name) {
     error_log(substr($class_name,8));
     $val =BaseConvert(substr($class_name,8),"QWERTYUIOPASDFGHJKLZXCVBNM","0123456789");
     $dir = BaseConvert(round(($val/50)+5000),"0123456789","QWERTYUIOPASDFGHJKLZXCVBNM");  
-    include_once __DIR__."/lib/encoders/$dir/".substr($class_name,8)."/$class_name".".php";
+    include_once __DIR__."/lib/encoders/$dir/$class_name".".php";
    
     
 });
