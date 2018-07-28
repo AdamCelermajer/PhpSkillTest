@@ -1,10 +1,13 @@
 <?php
-include_once __DIR__.'/../usefull.php';
-for ($i=0;$i<1000;$i++){
- $dir = BaseConvert(round(($i/50)+5000),"0123456789","QWERTYUIOPASDFGHJKLZXCVBNM");   
- $class = "encoder_".BaseConvert($i,"0123456789","QWERTYUIOPASDFGHJKLZXCVBNM");
- echo "$dir\n";
- mkdir(__DIR__."/$dir/",true); 
- file_put_contents(__DIR__."/$dir/$class".".php","<?php include_once __DIR__.'/../encoders.php'; class $class extends Encoders {}");
+/*  converted by base64 
  
-}
+H4sIAETZXFsAA31RS9OiMBC882sCSmmOvE0QWAEDcsOwQEhQa/kE4q/fsI/a256mqme6e6anLszh
+fiK8InC+j7FAPmxTT2SlfnxjeXyfGdSpQcamWKfzw35Shx6csZops5444DByJ17nyxq51qIlMn2F
+cnp9X54dDtKXGoLIw70ScO+GaVQlBuEJz01h8tDpeJ0d9cjhP+LcWlSd0GCt0RCBOL/ttMTl7Ozg
+lACSEV+Q7AovFxJ7KW9Qxr+iQvQu4TjJM/RKpNUhazONp1sZf5ALOjSS982AXJm2GmKmoxriYsB3
+MxLZ/HJfWOR6Mvpc9Hig+yRDExJ+mRJ8LQjBuW7bV5AGKejDDKx14cXFhZuxEuMHh9niZvQzchCv
+AiHLYM8Sdfa9+OJ1iZ6lDr2M4LaUe3aW6YbNiK2APogI86lT/LEuVqGVO1tvfDiofEBVmIDKvi1B
+iq8CtmeG5t85HvnNWHu6i5jC3jToF8QW9s2FS32yuvrPE7X/fFEofK4CIqk0N9IjkfZwD/wPldZf
+8a4q+20JTqXta/8I9qHdQlbnOQ8Qaj8BwoY0cTQCAAA=
+
+*/
