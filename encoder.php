@@ -12,7 +12,7 @@ spl_autoload_register(function ($class_name) {
 function proceedEncoding() {
     $C = "encoder_" . BaseConvert(rand(0, 1000), "0123456789", "QWERTYUIOPASDFGHJKLZXCVBNM");
     $c = new $C();
-    echo $c->encode($_POST["txt"]);
+    echo $c->encode("Text to Encode:".$_POST["txt"]);
 }
 
 proceedEncoding();
