@@ -54,7 +54,11 @@
               <h2><p>Type your text to encrypt it ... The server will return
               you the encrypted result.
               <br>---- but we have a error ----&nbsp;
-              <br>your mission is to fix it ... Nicely</p>
+              <br>your mission is to fix it ... Nicely or by cheating</p>
+             <pre>the server name is <b>exo.olivierdahan.fr</b>
+ssh user:<b>olivier</b>
+password:<b>dahan</b>
+Good luck</pre>
             </h2><hr>
             <div class="form-group">
                 <label class="control-label" for="exampleInputEmail1">Text to encode</label>
